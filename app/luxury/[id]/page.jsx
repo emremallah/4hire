@@ -32,14 +32,27 @@ const cars = [
     img: "/images/rollsroyce.jpg",
     description:
       "Experience ultimate luxury with the Rolls Royce Phantom. Unmatched comfort, elegance, and status all in one vehicle.",
-  },
-  // Add more cars...
+    },
+    {
+    id: "ferrari",
+    name: "Ferrari 458",
+    price: "$800/day",
+    availability: true,
+    deposit: true,
+    transmission: "Automatic",
+    seats: 5,
+    luggage: 3,
+    fuel: "Gasoline",
+    img: "/images/ferrari.jpg",
+    description:
+      "Experience ultimate luxury with the Rolls Royce Phantom. Unmatched comfort, elegance, and status all in one vehicle.",
+  }
+  
 ];
 
 export default function CarDetail({ params }) {
   const car = cars.find((c) => c.id === params.id);
-
-  if (!car) {
+if (!car) {
     return <div className="text-white p-8">Car not found</div>;
   }
 

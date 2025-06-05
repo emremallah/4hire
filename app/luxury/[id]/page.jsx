@@ -2,6 +2,10 @@
 
 import React from "react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 // Mock data - you can later fetch based on ID from DB
 const cars = [
@@ -15,7 +19,9 @@ const cars = [
     seats: 2,
     luggage: 1,
     fuel: "Gasoline",
-    img: "/images/lamborghini.jpg",
+    images: [
+      "/images/lamborghini.jpg",
+    ],
     description:
       "The Lamborghini Huracán combines incredible performance with a sleek and aggressive design. Ideal for high-end experiences and unforgettable drives.",
   },
@@ -29,11 +35,11 @@ const cars = [
     seats: 5,
     luggage: 3,
     fuel: "Gasoline",
-    img: "/images/rollsroyce.jpg",
+    images: ["/images/rollsroyce.jpg"],
     description:
       "Experience ultimate luxury with the Rolls Royce Phantom. Unmatched comfort, elegance, and status all in one vehicle.",
-    },
-    {
+  },
+  {
     id: "ferrari",
     name: "Ferrari 458",
     price: "$800/day",
@@ -43,30 +49,30 @@ const cars = [
     seats: 5,
     luggage: 3,
     fuel: "Gasoline",
-    img: "/images/ferrari.jpg",
+    images: ["/images/ferrari.jpg"],
     description:
-      "Experience ultimate luxury with the Rolls Royce Phantom. Unmatched comfort, elegance, and status all in one vehicle.",
+      "Enjoy the thrilling performance of the Ferrari 458, a masterpiece of Italian engineering and speed.",
   },
   {
     id: "mustang",
     name: "Ford Mustang 2024 V4 ecoboost",
     price: "AED450/day",
-    // availability: true,
+    availability: true,
     deposit: true,
     transmission: "Automatic",
     seats: 4,
     luggage: 3,
-    // fuel: "Gasoline",
-    img: "/images/mustang.jpeg",
+    fuel: "Gasoline",
+    images: ["/images/mustang.jpeg" , "/images/mustang2.jpeg"],
     description:
-      "Experience ultimate luxury with the Rolls Royce Phantom. Unmatched comfort, elegance, and status all in one vehicle.",
-  }
-  
+      "Drive the Ford Mustang 2024 and feel the roar of a V4 ecoboost with sporty performance.",
+  },
 ];
 
 export default function CarDetail({ params }) {
   const car = cars.find((c) => c.id === params.id);
-if (!car) {
+
+  if (!car) {
     return <div className="text-white p-8">Car not found</div>;
   }
 
@@ -74,13 +80,28 @@ if (!car) {
     <section className="bg-car-detail min-h-screen p-6 md:p-12 text-white">
       <div className="max-w-5xl mx-auto bg-[#FFFFFF10] backdrop-blur-md p-6 md:p-10 rounded-xl shadow-2xl border border-white/10">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <Image
-            src={car.img}
-            alt={car.name}
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
-          />
+          {/* Swiper Slider */}
+          <div className="w-full">
+            <Swiper
+              navigation
+              modules={[Navigation]}
+              className="rounded-lg overflow-hidden"
+            >
+              {car.images.map((src, index) => (
+                <SwiperSlide key={index}>
+                  <Image
+                    src={src}
+                    alt={`${car.name} ${index + 1}`}
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg object-cover w-full h-auto"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
+          {/* Info Section */}
           <div>
             <h1 className="text-4xl font-extrabold mb-4 text-green-400">{car.name}</h1>
             <p className="text-xl font-semibold text-white mb-4">{car.price}</p>
@@ -93,13 +114,12 @@ if (!car) {
               <li><strong>Fuel Type:</strong> {car.fuel}</li>
               <li>
                 <strong>Availability:</strong>{" "}
-                {/* <span className={car.availability ? "text-green-400" : "text-red-400"}>
+                <span className={car.availability ? "text-green-400" : "text-red-400"}>
                   {car.availability ? "Available" : "Not Available"}
-                </span> */}
+                </span>
               </li>
               <li>
-                <strong>Deposit Required:</strong>{" "}
-                {car.deposit ? "Yes" : "No"}
+                <strong>Deposit Required:</strong> {car.deposit ? "Yes" : "No"}
               </li>
             </ul>
 

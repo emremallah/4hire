@@ -46,6 +46,20 @@ const cars = [
     img: "/images/ferrari.jpg",
     description:
       "Experience ultimate luxury with the Rolls Royce Phantom. Unmatched comfort, elegance, and status all in one vehicle.",
+  },
+  {
+    id: "mustang",
+    name: "Ford Mustang 2024 V4 ecoboost",
+    price: "AED450/day",
+    // availability: true,
+    deposit: true,
+    transmission: "Automatic",
+    seats: 4,
+    luggage: 3,
+    // fuel: "Gasoline",
+    img: "/images/mustang.jpeg",
+    description:
+      "Experience ultimate luxury with the Rolls Royce Phantom. Unmatched comfort, elegance, and status all in one vehicle.",
   }
   
 ];
@@ -79,9 +93,9 @@ if (!car) {
               <li><strong>Fuel Type:</strong> {car.fuel}</li>
               <li>
                 <strong>Availability:</strong>{" "}
-                <span className={car.availability ? "text-green-400" : "text-red-400"}>
+                {/* <span className={car.availability ? "text-green-400" : "text-red-400"}>
                   {car.availability ? "Available" : "Not Available"}
-                </span>
+                </span> */}
               </li>
               <li>
                 <strong>Deposit Required:</strong>{" "}

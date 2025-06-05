@@ -54,7 +54,7 @@ const cars = [
   },
   {
     id: "mustang",
-    name: "Ford Mustang 2024 V4 Ecoboost",
+    name: "Ford Mustang 2024",
     price: "AED450/day",
     availability: true,
     deposit: true,
@@ -84,6 +84,26 @@ const cars = [
     ],
     description:
       "Drive the Ford Mustang 2024 and feel the roar of a V4 ecoboost with sporty performance.",
+  },
+  {
+    id: "patrol-2023",
+    name: "Patrol 2023",
+    price: "AED400/day",
+    availability: true,
+    deposit: true,
+    transmission: "Automatic",
+    seats: 4,
+    luggage: 3,
+    fuel: "Gasoline",
+    images: [
+      "/images/nismo/1.jpg",
+      "/images/nismo/2.jpg",
+      "/images/nismo/3.jpg",
+      "/images/nismo/4.jpg",
+      "/images/nismo/5.jpg"
+    ],
+    description:
+      "The 2024 Mustang Ecoboost offers modern muscle with efficiency—perfect for cruising Dubai’s highways.",
   },
 ];
 

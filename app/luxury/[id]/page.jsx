@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import SwiperCore from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -19,9 +20,7 @@ const cars = [
     seats: 2,
     luggage: 1,
     fuel: "Gasoline",
-    images: [
-      "/images/lamborghini.jpg",
-    ],
+    images: ["/images/lamborghini.jpg"],
     description:
       "The Lamborghini Huracán combines incredible performance with a sleek and aggressive design. Ideal for high-end experiences and unforgettable drives.",
   },
@@ -63,7 +62,7 @@ const cars = [
     seats: 4,
     luggage: 3,
     fuel: "Gasoline",
-    images: ["/images/mustang/mustang.jpeg" , "/images/mustang/mustang2.jpeg"],
+    images: ["/images/mustang/mustang.jpeg"],
     description:
       "Drive the Ford Mustang 2024 and feel the roar of a V4 ecoboost with sporty performance.",
   },
@@ -77,16 +76,29 @@ const cars = [
     seats: 4,
     luggage: 3,
     fuel: "Gasoline",
-    images: ["/images/dodge-challenger/1.jpeg" , "/images/dodge-challenger/2.jpeg" , "/images/dodge-challenger/3.jpeg" , 
-      "/images/dodge-challenger/4.jpeg" , "/images/dodge-challenger/5.jpeg" , "/images/dodge-challenger/6.jpeg", "/images/dodge-challenger/7.jpeg"
+    images: [
+      "/images/dodge-challenger/1.jpeg",
+      "/images/dodge-challenger/2.jpeg",
+      "/images/dodge-challenger/3.jpeg",
+      "/images/dodge-challenger/4.jpeg",
+      "/images/dodge-challenger/5.jpeg",
+      "/images/dodge-challenger/6.jpeg",
+      "/images/dodge-challenger/7.jpeg",
     ],
     description:
-      "Drive the Ford Mustang 2024 and feel the roar of a V4 ecoboost with sporty performance.",
+      "Drive the Dodge Challenger 2023 and feel the power of American muscle with iconic design and performance.",
   },
 ];
 
 export default function CarDetail({ params }) {
   const car = cars.find((c) => c.id === params.id);
+
+  useEffect(() => {
+    // Force update Swiper after mount to fix mobile display
+    setTimeout(() => {
+      SwiperCore.update();
+    }, 500);
+  }, []);
 
   if (!car) {
     return <div className="text-white p-8">Car not found</div>;
@@ -108,9 +120,10 @@ export default function CarDetail({ params }) {
                   <Image
                     src={src}
                     alt={`${car.name} ${index + 1}`}
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
+                    width={800}
+                    height={500}
+                    className="object-cover w-full h-auto rounded-lg shadow-lg"
+                    priority
                   />
                 </SwiperSlide>
               ))}

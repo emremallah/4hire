@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="relative w-full text-white">
       <div className="flex justify-between items-center py-4 px-4 md:px-8">
-        <div className="text-2xl md:text-3xl font-bold text-green-400 drop-shadow-md">4hire</div>
+        <div className="text-2xl md:text-3xl font-bold text-green-400 drop-shadow-md">4Hire Cars</div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">

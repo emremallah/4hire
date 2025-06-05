@@ -63,7 +63,23 @@ const cars = [
     seats: 4,
     luggage: 3,
     fuel: "Gasoline",
-    images: ["/images/mustang.jpeg" , "/images/mustang2.jpeg"],
+    images: ["/images/mustang/mustang.jpeg" , "/images/mustang/mustang2.jpeg"],
+    description:
+      "Drive the Ford Mustang 2024 and feel the roar of a V4 ecoboost with sporty performance.",
+  },
+  {
+    id: "dodge-challenger",
+    name: "Dodge Challenger 2023",
+    price: "AED450/day",
+    availability: true,
+    deposit: true,
+    transmission: "Automatic",
+    seats: 4,
+    luggage: 3,
+    fuel: "Gasoline",
+    images: ["/images/dodge-challenger/1.jpeg" , "/images/dodge-challenger/2.jpeg" , "/images/dodge-challenger/3.jpeg" , 
+      "/images/dodge-challenger/4.jpeg" , "/images/dodge-challenger/5.jpeg" , "/images/dodge-challenger/6.jpeg", "/images/dodge-challenger/7.jpeg"
+    ],
     description:
       "Drive the Ford Mustang 2024 and feel the roar of a V4 ecoboost with sporty performance.",
   },

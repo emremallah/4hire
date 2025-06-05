@@ -12,14 +12,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "4Hire",
-  description: "Generated ",
+  title: "4Hire Cars - Luxury Car Rentals in Dubai",
+  keywords: [
+    "luxury car rentals",
+    "Dubai car hire",
+    "exotic car rental Dubai",
+    "supercar rental Dubai",
+    "sports car rental Dubai",
+  ],
+  description: "Luxury Car Rentals in Dubai",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

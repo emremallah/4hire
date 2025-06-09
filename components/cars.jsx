@@ -72,7 +72,7 @@ const cars = [
       "/images/dodge-challenger/4.jpeg" , "/images/dodge-challenger/5.jpeg" , "/images/dodge-challenger/6.jpeg", "/images/dodge-challenger/7.jpeg"
     ],
     description:
-      "Drive the Ford Mustang 2024 and feel the roar of a V4 ecoboost with sporty performance.",
+      "Drive the Dodge Challenger 2023 and feel the roar of a V4 ecoboost with sporty performance.",
   },
   {
     id: "patrol-2023",

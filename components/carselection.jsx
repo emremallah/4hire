@@ -12,7 +12,7 @@ const luxuryCars = [
 
 function LuxuryCarSelection() {
   return (
-    <section className="py-16 px-8 text-center">
+    <section className="py-16 px-8 text-center bg-linear-to-l from-blue-950 to-black border-t-[1px] border-[#FFFFFF50]">
       <h2 className="text-4xl font-bold mb-8 text-gray-300">Luxury <span className='text-green-400'>Car</span> Selection</h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {luxuryCars.map((car) => (

@@ -1,3 +1,4 @@
+import CarCategoriesSection from '@/components/carcategoriessetion'
 import LuxuryCarSelection from '@/components/carselection'
 import ContactUs from '@/components/ContactUs'
 import Hero from '@/components/hero'
@@ -9,6 +10,7 @@ function page() {
   return (
     <div>
       <Hero />
+      <CarCategoriesSection />
       <LuxuryCarSelection />
       <WhyChooseUs />
       <CustomerReviews />

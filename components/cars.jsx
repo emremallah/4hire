@@ -118,6 +118,46 @@ const cars = [
     description:
       "Rule the road with the 2023 Patrol — a perfect SUV for exploring city streets or desert dunes in style and comfort.",
   },
+  {
+    id: "mustang-2024",
+    name: "Ford Mustang 2024",
+    price: "AED400/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 4,
+    luggage: 3,
+    category: "Muscle",
+    images: [
+      "/images/mustang2024/1.jpeg",
+      "/images/mustang2024/2.jpeg",
+      "/images/mustang2024/3.jpeg",
+      "/images/mustang2024/4.jpeg",
+    ],
+    description:
+      "The 2024 Mustang Ecoboost blends American muscle heritage with modern technology for an exhilarating drive across the UAE.",
+  },
+  {
+    id: "nissan-altima",
+    name: "Nissan Altima 2023",
+    price: "AED250/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 4,
+    luggage: 3,
+    category: "Economy",
+    images: [
+      "/images/nissan-altima/1.jpeg",
+      "/images/nissan-altima/2.jpeg",
+      "/images/nissan-altima/3.jpeg",
+      "/images/nissan-altima/4.jpeg",
+      "/images/nissan-altima/5.jpeg",
+      "/images/nissan-altima/6.jpeg",
+      "/images/nissan-altima/7.jpeg",
+      "/images/nissan-altima/8.jpeg",
+    ],
+    description:
+      "The 2024 Mustang Ecoboost blends American muscle heritage with modern technology for an exhilarating drive across the UAE.",
+  },
 ];
 
 export default cars;

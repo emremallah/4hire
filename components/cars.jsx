@@ -94,6 +94,30 @@ const cars = [
     description:
       "Rule the road with the 2023 Patrol — a perfect SUV for exploring city streets or desert dunes in style and comfort.",
   },
+  {
+    id: "corvette",
+    name: "Chevrolet Corvette 2024",
+    price: "AED1200/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 2,
+    luggage: 3,
+    category: "Muscle",
+    images: [
+      "/images/corvette/1.jpeg",
+      "/images/corvette/2.jpeg",
+      "/images/corvette/3.jpeg",
+      "/images/corvette/4.jpeg",
+      "/images/corvette/5.jpeg",
+      "/images/corvette/6.jpeg",
+      "/images/corvette/7.jpeg",
+      "/images/corvette/8.jpeg",
+      "/images/corvette/9.jpeg",
+      "/images/corvette/10.jpeg",
+    ],
+    description:
+      "Rule the road with the 2023 Patrol — a perfect SUV for exploring city streets or desert dunes in style and comfort.",
+  },
 ];
 
 export default cars;

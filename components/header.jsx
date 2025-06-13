@@ -8,7 +8,12 @@ import { Menu, X } from 'lucide-react';
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ['Home', 'Cars', 'About Us', 'Contact'];
+  const menuItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Cars', href: '/cars' },
+    { label: 'About Us', href: '/about' },
+    { label: 'Contact', href: '/contact' },
+  ];
 
   return (
     <header className="relative w-full text-white">
@@ -25,8 +30,8 @@ function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex flex-wrap gap-8 items-center">
           {menuItems.map((item) => (
-            <Link key={item} href="#" className="text-lg font-semibold relative group">
-              {item}
+            <Link key={item.label} href={item.href} className="text-lg font-semibold relative group">
+              {item.label}
               <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-green-400 group-hover:w-full transition-all duration-700"></span>
             </Link>
           ))}
@@ -42,12 +47,12 @@ function Header() {
         <div className="md:hidden bg-black text-white px-6 py-4 space-y-4 transition-all duration-300">
           {menuItems.map((item) => (
             <Link
-              key={item}
-              href="#"
+              key={item.label}
+              href={item.href}
               className="block text-base font-semibold border-b border-gray-700 pb-2 hover:text-green-400 duration-700"
               onClick={() => setIsOpen(false)}
             >
-              {item}
+              {item.label}
             </Link>
           ))}
           <button className="w-full mt-2 text-base font-semibold border-2 border-green-400 px-6 py-2 rounded-2xl hover:shadow-[0px_0px_20px_green] transition-shadow duration-700">

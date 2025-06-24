@@ -119,6 +119,25 @@ const cars = [
       "Rule the road with the 2023 Patrol — a perfect SUV for exploring city streets or desert dunes in style and comfort.",
   },
   {
+  id: "patrol-2023-hawk",
+  name: "Nissan patrol 2023 Platinum Black Hawk kit",
+  price: "AED450/day",
+  deposit: true,
+  transmission: "Automatic",
+  seats: 2,
+  luggage: 3,
+  category: "suv",
+  images: [
+    "/images/nissan-patrol/1.jpg",
+    "/images/nissan-patrol/2.jpg",
+    "/images/nissan-patrol/3.jpg",
+    "/images/nissan-patrol/4.jpg",
+  ],
+  description:
+    "Rule the road with the 2023 Patrol — a perfect SUV for exploring city streets or desert dunes in style and comfort.",
+},
+   
+  {
     id: "mustang-2024",
     name: "Ford Mustang 2024",
     price: "AED400/day",

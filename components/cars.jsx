@@ -2,7 +2,7 @@ const cars = [
   {
     id: "1",
     name: "Lamborghini Huracán",
-    price: "$899/day",
+    price: "AED899/day",
     deposit: true,
     transmission: "Automatic",
     seats: 2,
@@ -15,7 +15,7 @@ const cars = [
   {
     id: "2",
     name: "Rolls Royce Phantom",
-    price: "$1299/day",
+    price: "AED1299/day",
     deposit: true,
     transmission: "Automatic",
     seats: 5,
@@ -28,7 +28,7 @@ const cars = [
   {
     id: "ferrari",
     name: "Ferrari 458",
-    price: "$800/day",
+    price: "AED800/day",
     deposit: true,
     transmission: "Automatic",
     seats: 5,

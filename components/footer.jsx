@@ -26,7 +26,6 @@ function Footer() {
             <p>Phone: +971 503 155 971</p>
             <p>Email: info@4hire.com</p>
             <p>Location: Dubai, UAE</p>
-            <p>Founder: Yazdan</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Follow Us</h3>

@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-green-400 shadow-xl">
             <Image
-              src="/images/logo.png" // مسیر لوگو رو بررسی کن
+              src="/images/logo.png" 
               alt="4Hire Cars Logo"
               width={128}
               height={128}

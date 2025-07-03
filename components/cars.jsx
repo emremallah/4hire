@@ -177,6 +177,170 @@ const cars = [
     description:
       "The 2024 Mustang Ecoboost blends American muscle heritage with modern technology for an exhilarating drive across the UAE.",
   },
+  {
+    id: "bmw-m4-2023",
+    name: "BMW M4 2023",
+    price: "AED700/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 4,
+    luggage: 2,
+    category: "Sport",
+    images: [
+      "/images/bmw-m4/1.jpeg",
+      "/images/bmw-m4/2.jpeg",
+      "/images/bmw-m4/3.jpeg",
+    ],
+    description:
+      "The 2023 BMW M4 combines precision German engineering with raw turbocharged performance — made for those who crave the ultimate driving thrill.",
+  },
+  {
+    id: "g63-2023",
+    name: "Mercedes G63 AMG 2023",
+    price: "AED1200/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 5,
+    luggage: 4,
+    category: "Luxury",
+    images: [
+      "/images/g63/1.jpeg",
+      "/images/g63/2.jpeg",
+      "/images/g63/3.jpeg",
+    ],
+    description:
+      "Make a bold statement with the 2023 G63 AMG — the perfect fusion of luxury, power, and off-road dominance.",
+  },
+  {
+    id: "audi-r8",
+    name: "Audi R8 V10",
+    price: "AED950/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 2,
+    luggage: 2,
+    category: "Sport",
+    images: [
+      "/images/audi-r8/1.jpeg",
+      "/images/audi-r8/2.jpeg",
+      "/images/audi-r8/3.jpeg",
+    ],
+    description:
+      "Redefine your drive with the Audi R8 V10 — iconic design and a screaming engine that delivers pure excitement.",
+  },
+  {
+    id: "camaro-ss",
+    name: "Chevrolet Camaro SS 2023",
+    price: "AED450/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 4,
+    luggage: 3,
+    category: "Muscle",
+    images: [
+      "/images/camaro/1.jpeg",
+      "/images/camaro/2.jpeg",
+      "/images/camaro/3.jpeg",
+    ],
+    description:
+      "With aggressive styling and track-ready performance, the Camaro SS brings muscle car culture into the modern age.",
+  },
+  {
+    id: "tesla-model-s",
+    name: "Tesla Model S",
+    price: "AED600/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 5,
+    luggage: 4,
+    category: "Electric",
+    images: [
+      "/images/tesla-model-s/1.jpeg",
+      "/images/tesla-model-s/2.jpeg",
+    ],
+    description:
+      "Go electric with the Tesla Model S — unmatched acceleration, cutting-edge tech, and a futuristic driving experience.",
+  },
+  {
+    id: "land-cruiser-2023",
+    name: "Toyota Land Cruiser 2023",
+    price: "AED500/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 7,
+    luggage: 5,
+    category: "SUV",
+    images: [
+      "/images/land-cruiser/1.jpeg",
+      "/images/land-cruiser/2.jpeg",
+    ],
+    description:
+      "Conquer any terrain with the 2023 Land Cruiser — trusted durability and luxury for the whole family or crew.",
+  },
+  {
+    id: "bentley-bentayga",
+    name: "Bentley Bentayga",
+    price: "AED1500/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 5,
+    luggage: 4,
+    category: "Luxury",
+    images: [
+      "/images/bentayga/1.jpeg",
+      "/images/bentayga/2.jpeg",
+    ],
+    description:
+      "Ride in opulence with the Bentley Bentayga — a luxury SUV that combines handcrafted excellence with commanding power.",
+  },
+  {
+    id: "kia-k5-2023",
+    name: "Kia K5 2023",
+    price: "AED200/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 5,
+    luggage: 3,
+    category: "Economy",
+    images: [
+      "/images/kia-k5/1.jpeg",
+      "/images/kia-k5/2.jpeg",
+    ],
+    description:
+      "Sleek and efficient, the 2023 Kia K5 delivers modern features and comfort in an affordable, stylish package.",
+  },
+  {
+    id: "porsche-911",
+    name: "Porsche 911 Carrera",
+    price: "AED1100/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 2,
+    luggage: 2,
+    category: "Sport",
+    images: [
+      "/images/porsche-911/1.jpeg",
+      "/images/porsche-911/2.jpeg",
+    ],
+    description:
+      "Timeless and thrilling, the Porsche 911 Carrera is the gold standard of precision and prestige in the sports car world.",
+  },
+  {
+    id: "range-rover-vogue",
+    name: "Range Rover Vogue 2023",
+    price: "AED1000/day",
+    deposit: true,
+    transmission: "Automatic",
+    seats: 5,
+    luggage: 4,
+    category: "SUV",
+    images: [
+      "/images/range-rover-vogue/1.jpeg",
+      "/images/range-rover-vogue/2.jpeg",
+    ],
+    description:
+      "Make every journey first-class with the Range Rover Vogue — the pinnacle of luxury and all-terrain capability.",
+  },
 ];
 
 export default cars;
